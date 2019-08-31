@@ -1,0 +1,15 @@
+<h2>新規投稿</h2>
+<%= link_to '投稿一覧に戻る', meals_path, class: "link-style" %>
+<div class="new-form">
+  <%= form_for(:meal, url: meals_path) do |f| %>
+    <%= f.label "メニューの画像"%></br>
+    <%= f.file_field :image %></br>
+    <%= f.label "メニュー名"%></br>
+    <%= f.text_field :name, size: 20, maxlength: 20, placeholder: 'Meal Name', class: 'meal-name' %></br>
+
+    <%= f.label "メニュー紹介"%></br>
+    <%= f.text_area :content, size: 20, placeholder: 'Meal info', class: 'meal-content' %></br>
+
+    <%= f.submit '登録', class: 'meal-submit' %>
+  <% end %>
+</div>

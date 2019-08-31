@@ -1,0 +1,47 @@
+// Place all the styles related to the meals controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h2 {
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+}
+
+.new-form {
+    margin-left: 15px;
+}
+
+.meal-name {
+    width: 85%;
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    letter-spacing:　1px;
+}
+
+.meal-content {
+    width: 85%;
+    height: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+.meal-submit {
+    width: 80px;
+    height: 60px;
+}
+
+.new-menu {
+    color: #FFF;
+    text-decoration: none;
+}
+
+
+
+.show-image {
+    width: 40%;
+}
+
