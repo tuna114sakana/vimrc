@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="meal-show">
+    <h2><%= @meal.name %></h2>
+    <% if @meal.image.url %>
+    <%= image_tag @meal.image.url, class: 'show-image'%>
+    <% end %>
+    <p><%= @meal.content %></p>
+  </div>
+  <%= link_to '一覧へ', meals_path, class: 'link-style' %>
+  <%= link_to '削除', meal_path(@meal.id), method: :delete, class: 'link-style' %>
+</div>

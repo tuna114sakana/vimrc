@@ -1,0 +1,6 @@
+<% @meals.each do |meal| %>
+  <div class="index-area">
+　　<%= image_tag meal.image.url, class: 'index-image' %>
+　　<p><%= link_to meal.name, "/meals/#{meal.id}",class: 'link-style' %></p>
+  </div>
+<% end %>

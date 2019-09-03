@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Myapp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header class="header">
+  <h2>Fitness Meal</h2>
+    <ul>
+      <li><%= link_to'投稿する', new_meal_path, class: "link-style"%></li>
+      <li><%= link_to'ログイン', 'users/login_form', class: "link-style" %></li>
+    </ul>
+  </header>
+  <div class="container">
+    <%= yield %>
+  </div>
+  <footer>
+    <p>Created by Yoshiki Yamada</p>
+  </footer>
+  </body>
+</html>

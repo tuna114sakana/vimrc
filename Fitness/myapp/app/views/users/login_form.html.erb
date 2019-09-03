@@ -1,0 +1,9 @@
+<%= form_for(:user) do |f| %>
+    <%= f.label :name %></br>
+    <%= f.text_field :username %></br>
+    <%= f.label :password %></br>
+    <%= f.password_field :password_digest %>
+    <%= f.submit%>
+<% end %>
+
+ <%= link_to '新規登録はこちら', new_user_path, class: 'link-style' %>
